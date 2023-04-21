@@ -55,11 +55,11 @@ This will remove the file from Git's index, but leave it on your local filesyste
 
 ## Git commit
 
-after running `git add` or `git rm` commands, you need to run the `git commit` command to actually commit the changes to your repository.
+after running `git add` or `git rm` commands, you need to run the `git commit -m "commit message"` command to actually commit the changes to your repository.
 
 The `git add` command stages changes in your working directory and adds them to the index (also known as the staging area). However, this only prepares the changes to be committed. To permanently save the changes to your repository, you need to create a new commit.
 
-The `git commit` command creates a new commit with the changes that are currently in the index. When you run this command, Git opens a text editor where you can enter a commit message that describes the changes you've made.
+The `git commit -m "commit message"` command creates a new commit with the changes that are currently in the index. When you run this command, Git opens a text editor where you can enter a commit message that describes the changes you've made.
 
 Here's an example workflow for adding a new file to your repository:
 
@@ -76,7 +76,7 @@ And here's an example workflow for removing a file from your repository:
     3. Commit the changes: `git commit -m "Removed a file"`.
 
 
-In both cases, the `git add` or `git rm` command stages the changes, and the `git commit` command creates a new commit with those changes.
+In both cases, the `git add` or `git rm` command stages the changes, and the `git commit -m "commit message"` command creates a new commit with those changes.
 
 
 In Git, files are managed and tracked using a system of snapshots. When you make changes to a file in your repository, Git creates a new snapshot of that file, and keeps track of its history over time.
